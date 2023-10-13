@@ -1,0 +1,521 @@
+# ————————————————— S1 is the start symbol
+99	START	S1
+
+# ————————————————— Overall structure
+69	S1	S End
+2	S1	S ?
+29	S1	SQ ?
+
+# ————————————————— Sentences
+15	S	NPSubPl VPPl
+60	S	NPSubSi VPSi
+1	S	NPSubPlTer VPPl
+4	S	NPSubSiTer VPSi
+1	S	NPSubPlAppo , VPPl
+1	S	NPSubSiAppo , VPSi
+
+1	S	S and S
+5	S	either S or S
+6	S	neither S nor S
+1	S	S CoordConj S
+1	S	S SubConj S
+1	S	SBar Pause S
+1	S	S Pause SBar
+
+1	S	DoPl VPPl
+1	S	DoPl not VPPl
+
+7	S	it is NPObj
+
+100	SBar	WhAdverb S
+
+100	SBase	NPSub VPBase
+
+# ————————————————— Yes-no questions
+9	SQ	DoPl NPSubPl VPBaseQuesYN
+1	SQ	MD NPSubPl VPBaseQuesYN
+35	SQ	BePl NPSubPl VPGerQuesYN
+1	SQ	HavePl NPSubPl VPPastPartQuesYN
+1	SQ	BePl NPSubPl Adj
+
+12	SQ	DoSi NPSubSi VPBaseQuesYN
+1	SQ	MD NPSubSi VPBaseQuesYN
+1	SQ	BeSi NPSubSi VPGerQuesYN
+1	SQ	HaveSi NPSubSi VPPastPartQuesYN
+1	SQ	BeSi NPSubSi Adj
+
+# ————————————————— Wh-questions
+21	SQ	WhPronoun DoSi NPSubSi VPBaseQues
+1	SQ	WhPronoun MD NPSubSi VPBaseQues
+1	SQ	WhPronoun BeSi NPSubSi
+1	SQ	WhPronoun BeSi NPSubSi VPGerQues
+1	SQ	WhPronoun HaveSi NPSubSi VPPastPartQues
+1	SQ	WhPronoun HaveSi NPSubSi BePastPart VPGerQues
+
+6	SQ	WhPronoun DoPl NPSubPl VPBaseQues
+1	SQ	WhPronoun MD NPSubPl VPBaseQues
+1	SQ	WhPronoun BePl NPSubPl
+1	SQ	WhPronoun BePl NPSubPl VPGerQues
+1	SQ	WhPronoun HavePl NPSubPl VPPastPartQues
+1	SQ	WhPronoun HavePl NPSubPl BePastPart VPGerQues
+
+12	SQ	WhAdverb DoSi NPSubSi VPBase
+1	SQ	WhAdverb MD NPSubSi VPBase
+1	SQ	WhAdverb BeSi NPSubSi
+1	SQ	WhAdverb BeSi NPSubSi VPGer
+1	SQ	WhAdverb HaveSi NPSubSi VPPastPart
+1	SQ	WhAdverb HaveSi NPSubSi BePastPart VPGer
+
+3	SQ	WhAdverb DoPl NPSubPl VPBase
+1	SQ	WhAdverb MD NPSubPl VPBase
+1	SQ	WhAdverb BePl NPSubPl
+3	SQ	WhAdverb BePl NPSubPl VPGer
+1	SQ	WhAdverb HavePl NPSubPl VPPastPart
+1	SQ	WhAdverb HavePl NPSubPl BePastPart VPGer
+
+# ————————————————— Question clause Supercategory
+100	SQClause	NPSub VPQues
+1	SQClause	that NPSub VPQues
+
+# ————————————————— Sentence clause Supercategory
+11	SClause	S
+33	SClause	SBase
+1	SClause	that S
+11	SClause	that SBase
+
+1	SClause	WhPronoun NPSubPl VPBaseQues
+1	SClause	WhPronoun NPSubPl VPPastQues
+1	SClause	WhPronoun NPSubPl VPPresPlQues
+1	SClause	WhPronoun NPSubPl BePl
+11	SClause	WhPronoun NPSubPl BePl VPGer
+11	SClause	WhPronoun VPPl
+
+1	SClause	WhPronoun NPSubSi VPBaseQues
+1	SClause	WhPronoun NPSubSi VPPastQues
+1	SClause	WhPronoun NPSubSi VPPresSiQues
+1	SClause	WhPronoun NPSubSi BeSi
+1	SClause	WhPronoun NPSubSi BeSi VPGer
+22	SClause	WhPronoun VPSi
+
+1	SClause	WhAdverb NPSubPl VPPl
+1	SClause	WhAdverb NPSubPl BePl
+1	SClause	WhAdverb NPSubPl BePl VPGer
+1	SClause	WhAdverb HavePl NPSubPl VPPastPart
+1	SClause	WhAdverb HavePl NPSubPl BePastPart VPGer
+
+1	SClause	WhAdverb NPSubSi VPSi
+1	SClause	WhAdverb NPSubSi BeSi
+1	SClause	WhAdverb NPSubSi BeSi VPGer
+1	SClause	WhAdverb HaveSi NPSubSi VPPastPart
+1	SClause	WhAdverb HaveSi NPSubSi BePastPart VPGer
+
+# ————————————————— VP Quesions with Yes-No answers
+29	VPBaseQuesYN	VIBase
+29	VPBaseQuesYN	VTBase NPObj
+1	VPBaseQuesYN	VTBase SClause
+14	VPBaseQuesYN	VTBase ObjPrep NPObj
+29	VPBaseQuesYN	VTBase To NPObj
+
+1	VPBaseQuesYN	VPBaseQuesYN PP
+
+53	VPGerQuesYN	VIGer
+1	VPGerQuesYN	VTGer NPObj
+18	VPGerQuesYN	VTGer SClause
+1	VPGerQuesYN	VTGer ObjPrep NPObj
+1	VPGerQuesYN	VTGer To NPObj
+
+29	VPGerQuesYN	VPGerQuesYN PP
+
+1	VPPastPartQuesYN	VIPastPart
+1	VPPastPartQuesYN	VTPastPart NPObj
+1	VPPastPartQuesYN	VTPastPart SClause
+1	VPPastPartQuesYN	VTPastPart ObjPrep NPObj
+1	VPPastPartQuesYN	VTPastPart To NPObj
+
+1	VPPastPartQuesYN	VPPastPartQuesYN PP
+
+# ————————————————— VP Wh-Question Supercategory
+100	VPQues	VPBaseQues
+1	VPQues	VPPastQues
+
+54	VPBaseQues	VIBase
+1	VPBaseQues	VTBase
+31	VPBaseQues	VTBase SQClause
+1	VPBaseQues	VTBase ObjPrep NPObj
+1	VPBaseQues	VTBase To NPObj
+8	VPBaseQues	BeBase
+8	VPBaseQues	VPSpecial
+
+1	VPBaseQues	VPBaseQues PP
+
+1	VPPresPlQues	VIPresPl
+1	VPPresPlQues	VTPresPl
+1	VPPresPlQues	VTPresPl SQClause
+1	VPPresPlQues	VTPresPl ObjPrep NPObj
+1	VPPresPlQues	VTPresPl To NPObj
+
+1	VPPresPlQues	VPPresPlQues PP
+
+1	VPPresSiQues	VIPresSi
+1	VPPresSiQues	VTPresSi
+1	VPPresSiQues	VTPresSi SQClause
+1	VPPresSiQues	VTPresSi ObjPrep NPObj
+1	VPPresSiQues	VTPresSi To NPObj
+
+1	VPPresSiQues	VPPresPlQues PP
+
+1	VPPastQues	VIPast
+1	VPPastQues	VTPast
+1	VPPastQues	VTPast SQClause
+1	VPPastQues	VTPast ObjPrep NPObj
+1	VPPastQues	VTPast To NPObj
+1	VPPastQues	BeBase
+
+1	VPPastQues	VPPastQues PP
+
+1	VPGerQues	VIGer
+1	VPGerQues	VTGer
+1	VPGerQues	VTGer SQClause
+1	VPGerQues	VTGer ObjPrep NPObj
+1	VPGerQues	VTGer To NPObj
+
+1	VPGerQues	VPGerQues PP
+
+1	VPPastPartQues	VIPast
+1	VPPastPartQues	VTPast
+1	VPPastPartQues	VTPast SQClause
+1	VPPastPartQues	VTPast ObjPrep NPObj
+1	VPPastPartQues	VTPast To NPObj
+
+1	VPPastPartQues	VPPastPartQues PP
+
+# ————————————————— Active voice
+33	VPPl	VPPresPl
+7	VPPl	VPPastPl
+1	VPPl	BePl VPGer
+1	VPPl	HavePl VPPastPart
+1	VPPl	HavePl BePastPart VPGer
+7	VPPl	MD VPBase
+4	VPPl	MD BeBase VPGer
+4	VPPl	MDPast HaveBase VPPastPart
+1	VPPl	MDPast HaveBase BePastPart VPGer
+
+44	VPSi	VPPresSi
+4	VPSi	VPPastSi
+1	VPSi	BeSi VPGer
+1	VPSi	HaveSi VPPastPart
+1	VPSi	HaveSi BePastPart VPGer
+8	VPSi	MD VPBase
+5	VPSi	MD BeBase VPGer
+4	VPSi	MDPast HaveBase VPPastPart
+1	VPSi	MDPast HaveBase BePastPart VPGer
+
+1	VPBase	BeBase VPGer
+1	VPBase	HaveBase VPPastPart
+1	VPBase	HaveBase BePastPart VPGer
+1	VPBase	MD VPBase
+1	VPBase	MD BeBase VPGer
+1	VPBase	MDPast HaveBase VPPastPart
+1	VPBase	MDPast HaveBase BePastPart VPGer
+
+# ————————————————— Passive voice
+1	VPPl	BePl VTPastPart
+1	VPPl	BePl BeGer VTPastPart
+1	VPPl	HavePl BePastPart VTPastPart
+1	VPPl	MD BeBase VTPastPart
+1	VPPl	MDPast HaveBase BePastPart VTPastPart
+
+1	VPSi	BeSi VTPastPart
+1	VPSi	BeSi BeGer VTPastPart
+1	VPSi	HaveSi BePastPart VTPastPart
+1	VPSi	MD BeBase VTPastPart
+1	VPSi	MDPast HaveBase BePastPart VTPastPart
+
+6	VPBase	BeBase VTPastPart
+1	VPBase	BeBase BeGer VTPastPart
+1	VPBase	HaveBase BePastPart VTPastPart
+1	VPBase	MD BeBase VTPastPart
+1	VPBase	MDPast HaveBase BePastPart VTPastPart
+
+# ————————————————— Other VP rules
+7	VPPl	VPPl Adverb
+1	VPPl	Adverb VPPl
+22	VPPl	VPPl PP
+1	VPPl	BePl Adj
+1	VPPl	BePl
+1	VPPl	BePl NPObjPl
+11	VPPl	DoPl
+1	VPPl	DoPl NPObj
+1	VPPl	DoPl SClause
+4	VPPl	VTPl SClause
+
+1	VPSi	VPSi Adverb
+1	VPSi	Adverb VPSi
+6	VPSi	VPSi PP
+5	VPSi	BeSi Adj
+1	VPSi	BeSi
+1	VPSi	BeSi NPObjSi
+14	VPSi	DoSi
+1	VPSi	DoSi NPObj
+1	VPSi	DoSi SClause
+4	VPSi	VTSi SClause
+
+1	VPBase	VPBase Adverb
+1	VPBase	Adverb VPBase
+1	VPBase	VPBase PP
+1	VPBase	BeBase Adj
+1	VPBase	BeBase
+1	VPBase	BeBase NPObj
+1	VPBase	DoBase
+6	VPBase	VTBase SClause
+
+100	VPSpecial	VPSpecialBase VPBase
+1	VPSpecialBase	VSpecialBase
+100	VPSpecialBase	VSpecialBase Adverbial
+1	Adverbial	Adverb
+100	Adverbial	TimeAdv
+100	TimeAdv	DetSi TimeSi
+
+# ————————————————— VP Supercategory
+1	VPPast	VPPastPl
+100	VPPast	VPPastSi
+
+33	VPPl	VPPresPl
+7	VPPl	VPPastPl
+1	VPPl	VPGer
+1	VPPl	VPPastPart
+
+44	VPSi	VPPresSi
+1	VPSi	VPPastPl
+1	VPSi	VPGer
+1	VPSi	VPPastPart
+
+72	VPBase	VIBase
+17	VPBase	VTBase NPObj
+1	VPBase	VTBase ProNounObj
+1	VPBase	VTBase ObjPrep NPObj
+1	VPBase	VPBase CoordConj VPBase
+
+45	VPPresPl	VIPresPl
+18	VPPresPl	VTPresPl NPObj
+1	VPPresPl	VTPresPl ProNounObj
+1	VPPresPl	VTPresPl To NPObj
+9	VPPresPl	VTPresPl ObjPrep NPObj
+27	VPPresPl	BePresPl
+1	VPPresPl	BePresPl NPObjPl
+1	VPPresPl	VPPresPl CoordConj VPPresPl
+
+48	VPPresSi	VIPresSi
+38	VPPresSi	VTPresSi NPObj
+1	VPPresSi	VTPresSi ProNounObj
+1	VPPresSi	VTPresSi To NPObj
+1	VPPresSi	VTPresSi ObjPrep NPObj
+2	VPPresSi	BePresSi
+12	VPPresSi	BePresSi NPObjSi
+1	VPPresSi	VPPresSi CoordConj VPPresSi
+
+1	VPPastPl	VIPast
+1	VPPastPl	VTPast NPObj
+1	VPPastPl	VTPast ProNounObj
+1	VPPastPl	VTPast To NPObj
+1	VPPastPl	VTPast ObjPrep NPObj
+1	VPPastPl	BePastPl
+100	VPPastPl	BePastPl NPObjPl
+1	VPPastPl	VPPastPl CoordConj VPPastPl
+
+1	VPPastSi	VIPast
+1	VPPastSi	VTPast NPObj
+1	VPPastSi	VTPast ProNounObj
+50	VPPastSi	VTPast To NPObj
+17	VPPastSi	VTPast ObjPrep NPObj
+1	VPPastSi	BePastSi
+17	VPPastSi	BePastSi NPObjSi
+17	VPPastSi	VPPastSi CoordConj VPPastSi
+
+25	VPGer	VIGer
+1	VPGer	VTGer NPObj
+1	VPGer	VTGer ProNounObj
+25	VPGer	VTGer To NPObj
+50	VPGer	VTGer ObjPrep NPObj
+1	VPGer	BeGer
+1	VPGer	BeGer NPObj
+1	VPGer	VPGer CoordConj VPGer
+1	VPGer	Adverb VPGer
+
+40	VPPastPart	VIPastPart
+1	VPPastPart	VTPastPart NPObj
+1	VPPastPart	VTPastPart ProNounObj
+20	VPPastPart	VTPastPart To NPObj
+1	VPPastPart	VTPastPart ObjPrep NPObj
+20	VPPastPart	BePastPart
+1	VPPastPart	BePastPart NPObj
+1	VPPastPart	VPPastPart CoordConj VPPastPart
+20	VPPastPart	Adverb VPPastPart
+
+# ————————————————— Verbs Supercategory
+
+100	VTPl	VTPresPl
+1	VTPl	VTPast
+1	VTPl	VTGer
+1	VTPl	VTPastPart
+
+67	VTSi	VTPresSi
+33	VTSi	VTPast
+1	VTSi	VTGer
+1	VTSi	VTPastPart
+
+# ————————————————— BeVerbs Supercategory
+1	Be	BePl
+1	Be	BeSi
+1	Be	BePres
+1	Be	BePast
+1	Be	BeGer
+1	Be	BePastPart
+
+1	BePres	BePresPl
+1	BePres	BePresSi
+
+1	BePast	BePastPl
+1	BePast	BePastSi
+
+93	BePl	BePresPl
+7	BePl	BePastPl
+
+80	BeSi	BePresSi
+20	BeSi	BePastSi
+
+# ————————————————— DoVerbs Supercategory
+1	Do	DoPl
+1	Do	DoSi
+
+# ————————————————— Have Supercategory
+1	HavePl	HavePresPl
+1	HavePl	HavePast
+
+1	HaveSi	HavePresSi
+1	HaveSi	HavePast
+
+# ————————————————— Modal Supercategory
+69	MD	MDPast
+31	MD	MDPres
+
+# ————————————————— Modal Supercategory
+1	ProNounObj	ProNounObjSi
+1	ProNounObj	ProNounObjPl
+
+# ————————————————— NP Supercategory
+100	NPSub	NPSubNoAppo
+1	NPSub	NPSubWithAppo
+
+7	NPSubNoAppo	NPSubPl
+93	NPSubNoAppo	NPSubSi
+
+1	NPSubWithAppo	NPSubPlAppo
+1	NPSubWithAppo	NPSubSiAppo
+
+
+98	NPObj	NPObjNoAppo
+2	NPObj	NPObjWithAppo
+
+4	NPObjNoAppo	NPObjPl
+96	NPObjNoAppo	NPObjSi
+
+1	NPObjWithAppo	NPObjPlAppo
+100	NPObjWithAppo	NPObjSiAppo
+
+# ————————————————— NP Relative Clauses
+6	NPPl	NPPl NPPlClause
+4	NPSi	NPSi NPSiClause
+
+100	NPPlClause	NPPlClausePres
+1	NPPlClause	NPClausePast
+
+86	NPSiClause	NPSiClausePres
+14	NPSiClause	NPClausePast
+
+100	NPPlClausePres	RelClausePron VPPresPl
+
+100	NPSiClausePres	RelClausePron VPPresSi
+
+100	NPClausePast	RelClausePron VPPast
+
+# ————————————————— NP Apposition
+100	NPSubSiAppo	NPSubSi , NPSub
+1	NPSubPlAppo	NPSubPl , NPSub
+
+100	NPObjSiAppo	NPObjSi , NPObj
+1	NPObjPlAppo	NPObjPl , NPObj
+
+# ————————————————— NPSi Basics
+95	NPSubSi	NPSi
+5	NPSubSi	ProNounSubSi
+
+97	NPObjSi	NPSi
+3	NPObjSi	ProNounObjSi
+
+55	NPSi	PreNPSi NbarSi
+35	NPSi	NPSiPostAdj
+1	NPSi	Adj NPSiPostAdj
+2	NPSi	VIGer
+1	NPSi	VIGer To NPObjNoAppo # ???
+1	NPSi	VTGer To NPObjNoAppo # ???
+1	NPSi	VTGer NPObjNoAppo
+2	NPSi	NPSi PP
+
+3	NbarSi	Adj NbarSi
+89	NbarSi	NounSi
+8	NbarSi	Loc
+
+5	NPSiPostAdj	NounSi
+26	NPSiPostAdj	Loc
+69	NPSiPostAdj	Proper
+
+98	PreNPSi	DetSi
+1	PreNPSi	NumSi
+2	PreNPSi	PosProNoun
+
+# ————————————————— NPSiTer (NPSi that should not be recursed)
+25	NPSubSiTer	either NPSubNoAppo or NPSubSi
+1	NPSubSiTer	NPSubNoAppo or NPSubSi
+75	NPSubSiTer	neither NPSubNoAppo nor NPSubSi
+
+1	NPObjSiTer	either NPObjNoAppo or NPObjSi
+1	NPObjSiTer	NPObjNoAppo or NPObjSi
+1	NPObjSiTer	neither NPObjNoAppo nor NPObjSi
+
+# ————————————————— NPPl Basics
+68	NPSubPl	NPPl
+32	NPSubPl	ProNounSubPl
+
+100	NPObjPl	NPPl
+1	NPObjPl	ProNounObjPl
+
+25	NPPl	PreNPPl NbarPl
+69	NPPl	NPPlPostAdj
+1	NPPl	Adj NPPlPostAdj
+1	NPPl	NPPl PP
+
+1	NbarPl	Adj NbarPl
+100	NbarPl	NounPl
+
+100	NPPlPostAdj	NounPl
+
+12	PreNPPl	DetPl
+88	PreNPPl	NumPl
+1	PreNPPl	PosProNoun
+
+# ————————————————— NPPlTer (NPPl that should not be recursed)
+1	NPSubPlTer	either NPSubNoAppo or NPSubPl
+1	NPSubPlTer	NPSubNoAppo or NPSubPl
+1	NPSubPlTer	neither NPSubNoAppo nor NPSubPl
+100	NPSubPlTer	NPSubNoAppo and NPSubNoAppo
+
+1	NPObjPlTer	either NPObjNoAppo or NPObjPl
+1	NPObjPlTer	NPObjNoAppo or NPObjPl
+1	NPObjPlTer	neither NPObjNoAppo nor NPObjPl
+1	NPObjPlTer	NPObjNoAppo and NPObjNoAppo
+
+# ————————————————— PP
+100	PP	Prep NPObj
+1	PP	PP PP
+1	PP	Prep ProNounObj

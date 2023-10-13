@@ -1,0 +1,442 @@
+# This is a hand-generated set of preterminal rules.
+# It specifies a simple tag set which will be handled by the S2
+# grammar and which can (though doesn't necessarily need to be)
+# handled by the S1 grammar.
+#
+# The weights given here may be changed, but no new vocabulary
+# items are to be added.
+
+# Miscellaneous items that don't fit into any of our simple tags are
+# given to Misc.  You will want to develop your own tags for these!
+
+
+# Singular and mass nouns.  Notice that only the
+# ones that start with consonants get our Noun tag.
+10	NounSi	castle
+9	NounSi	king
+2	NounSi	defeater
+1	NounSi	sovereign
+8	NounSi	servant
+4	NounSi	corner
+5	NounSi	land
+2	NounSi	quest
+8	NounSi	chalice
+2	NounSi	master
+4	NounSi	horse
+3	NounSi	fruit
+8	NounSi	swallow
+1	NounSi	sun
+1	NounSi	winter
+3	NounSi	coconut
+2	NounSi	pound
+4	NounSi	husk
+4	NounSi	home
+5	NounSi	weight
+10	NounSi	story
+
+100	TimeSi	winter
+
+# Determiners.
+14	DetSi	a
+9	DetSi	another
+6	DetSi	any
+6	DetSi	each
+8	DetSi	every
+10	DetSi	no
+5	DetSi	that
+29	DetSi	the
+11	DetSi	this
+
+1	DetPl	any
+100	DetPl	no
+1	DetPl	the
+
+1	The	the
+
+# Prepositions.
+5	Prep	above
+10	Prep	across
+5	Prep	at
+1	Prep	below
+15	Prep	by
+1	Prep	for
+1	Prep	from
+15	Prep	into
+10	Prep	near
+20	Prep	of
+1	Prep	on
+1	Prep	over
+5	Prep	through
+1	Prep	with
+15	Prep	to
+
+1	ObjPrep	by
+43	ObjPrep	for
+14	ObjPrep	from
+43	ObjPrep	with
+
+# Proper nouns.  Note that our Proper tag is just for people.
+38	Proper	Arthur
+17	Proper	Guinevere
+7	Proper	Sir Lancelot
+2	Proper	Sir Bedevere
+12	Proper	Zoot
+12	Proper	Dingo
+12	Proper	Patsy
+1	Proper	Uther Pendragon
+
+# Verbs (third person singular present).
+# Note that only transitive verbs get our VerbT tag,
+# and some of those could also function as intransitives!
+
+
+# End-of-sentence.
+41	End	!
+59	End	.
+1	Misc	?
+
+# Pauses.
+100	Pause	,
+1	Pause	...
+1	Pause	--
+1	Pause	;
+1	Pause	:
+
+# Coordinating conjunctions.
+100	CoordConj	and
+1	CoordConj	but
+1	CoordConj	or
+1	CoordConj	so
+
+1	Misc	either
+1	Misc	nor
+1	Misc	neither
+
+# Numbers.
+14	NumPl	eight
+14	NumPl	five
+1	NumSi	one
+14	NumPl	5.5
+14	NumPl	sixty
+43	NumPl	5,000
+
+# Expletive.
+1	Misc	there
+
+# Subordinating conjunctions.
+1	Misc	that
+1	SubConj	so
+1	SubConj	while
+100	SubConj	because
+1	SubConj	if
+
+# Modals.
+50	MDPres	ought to
+50	MDPres	can
+1	MDPres	may
+1	MDPres	must
+1	MDPres	shall
+1	MDPres	should
+1	MDPres	will
+1	MDPres	would
+
+13	MDPast	could
+27	MDPast	might
+1	MDPast	must
+7	MDPast	should
+47	MDPast	will
+7	MDPast	would
+
+# have
+1	HavePresSi	has
+1	HavePresPl	have
+1	HavePast	had
+100	HaveBase	have
+
+
+# Adjectives.
+1	Adj	bloody
+14	Adj	weary
+1	Adj	unable
+14	Adj	trusty
+1	Adj	further
+1	Adj	sacred
+1	Adj	tropical
+1	Adj	indigenous
+14	Adj	temperate
+14	Adj	hot
+1	Adj	lucky
+1	Adj	simple
+14	Adj	tiny
+14	Adj	hard
+1	Adj	sensational
+1	Adj	comparable
+1	Adj	angolian
+14	Adj	yellow
+1	Adj	plodding
+
+# Comparative adjectives.
+1	Misc	bloodier
+1	Misc	wearier
+1	Misc	trustier
+1	Misc	hotter
+1	Misc	simpler
+1	Misc	tinier
+1	Misc	harder
+
+# Superlative adjectives.
+1	Misc	bloodiest
+1	Misc	weariest
+1	Misc	trustiest
+1	Misc	hottest
+1	Misc	simplest
+1	Misc	tiniest
+1	Misc	hardest
+
+# Plural nouns.
+10	NounPl	coconuts
+20	NounPl	halves
+3	NounPl	snows
+7	NounPl	mountains
+3	NounPl	areas
+7	NounPl	strangers
+10	NounPl	inches
+10	NounPl	snakes
+13	NounPl	ants
+13	NounPl	nights
+
+# More proper nouns, not people.
+
+38	Loc	Camelot
+33	Loc	England
+17	Loc	Holy Grail
+12	Loc	Round Table
+
+# Plural proper nouns.
+3	NounPl	Britons
+1	NounPl	Saxons
+
+#1	ProNounSubPl	Britons
+#1	ProNounSubPl	Saxons
+
+# Personal pronouns.
+2	NounSi	one
+
+40	ProNounSubSi	he
+60	ProNounSubSi	she
+1	ProNounSubSi	it
+
+100	ProNounSubPl	they
+
+50	ProNounObjSi	her
+1	ProNounObjSi	him
+50	ProNounObjSi	it
+
+1	ProNounObjPl	them
+
+
+# Possessive personal pronouns
+1	PosProNoun	her
+100	PosProNoun	his
+1	PosProNoun	its
+1	PosProNoun	their
+
+# Adverbs.
+1	Adverb	again
+1	Adverb	already
+1	Adverb	currently
+33	Adverb	frequently
+33	Adverb	precisely
+1	Adverb	south
+33	Adverb	successfully
+1	Adverb	unfortunately
+
+# 'do'/'does'
+100	DoPl	do
+100	DoSi	does
+1	DoBase	do
+
+# 'to'
+100	To	to
+
+# 'not'
+1	Misc	not
+
+# Verbs (base form).
+8	VTBase	have
+23	VTBase	speak
+1	VTBase	cover
+15	VTBase	ride
+15	VTBase	drink
+1	VTBase	grow
+1	VTBase	carry
+31	VTBase	suggest
+8	VTBase	migrate
+1	VTBase	know
+
+9	VIBase	have
+18	VIBase	speak
+9	VIBase	cover
+23	VIBase	ride
+9	VIBase	drink
+14	VIBase	grow
+1	VIBase	migrate
+5	VIBase	know
+5	VIBase	carry
+9	VIBase	suggest
+
+# spcial cases: suggest sb. do sth.; have sb. do sth
+100	VSpecialBase	suggest
+1	VSpecialBase	have
+
+# Verbs (past tense).
+1	VTPast	had
+1	VTPast	spoke
+1	VTPast	covered
+40	VTPast	rode
+40	VTPast	drank
+1	VTPast	grew
+1	VTPast	carried
+20	VTPast	suggested
+1	VTPast	migrated
+1	VTPast	knew
+
+1	VIPast	carried
+1	VIPast	had
+1	VIPast	spoke
+1	VIPast	covered
+1	VIPast	rode
+1	VIPast	drank
+1	VIPast	grew
+1	VIPast	migrated
+1	VIPast	suggested
+
+100	BeBase	be
+100	BePresSi	is
+100	BePresPl	are
+100	BePastSi	was
+100	BePastPl	were
+1	BeGer	being
+100	BePastPart	been
+
+# Verbs (present participles).
+10	VTGer	having
+1	VTGer	speaking
+20	VTGer	covering
+10	VTGer	being
+30	VTGer	riding
+1	VTGer	drinking
+10	VTGer	growing
+1	VTGer	carrying
+10	VTGer	suggesting
+1	VTGer	migrating
+10	VTGer	knowing
+
+1	VIGer	having
+19	VIGer	speaking
+6	VIGer	covering
+6	VIGer	being
+6	VIGer	riding
+31	VIGer	drinking
+12	VIGer	growing
+12	VIGer	migrating
+1	VIGer	knowing
+1	VIGer	carrying
+6	VIGer	suggesting
+
+# Verbs (past participle).
+1	VTPastPart	had
+1	VTPastPart	spoken
+25	VTPastPart	covered
+1	VTPastPart	been
+1	VTPastPart	ridden
+1	VTPastPart	drunk
+25	VTPastPart	grown
+50	VTPastPart	carried
+1	VTPastPart	suggested
+1	VTPastPart	migrated
+1	VTPastPart	known
+
+1	VIPastPart	carried
+1	VIPastPart	had
+1	VIPastPart	spoken
+50	VIPastPart	covered
+1	VIPastPart	ridden
+1	VIPastPart	drunk
+1	VIPastPart	grown
+1	VIPastPart	migrated
+50	VIPastPart	known
+1	VIPastPart	suggested
+
+# More third person singular verbs.
+6	VTPresSi	goes
+12	VTPresSi	has
+6	VTPresSi	speaks
+6	VTPresSi	covers
+18	VTPresSi	rides
+6	VTPresSi	drinks
+1	VTPresSi	grows
+6	VTPresSi	carries
+6	VTPresSi	suggests
+1	VTPresSi	migrates
+35	VTPresSi	knows
+
+5	VIPresSi	carries
+11	VIPresSi	goes
+32	VIPresSi	knows
+5	VIPresSi	speaks
+1	VIPresSi	covers
+1	VIPresSi	rides
+21	VIPresSi	drinks
+5	VIPresSi	grows
+5	VIPresSi	migrates
+16	VIPresSi	suggests
+
+# Verbs (present, plural, third person).
+1	VTPresPl	have
+50	VTPresPl	speak
+1	VTPresPl	cover
+1	VTPresPl	ride
+1	VTPresPl	drink
+1	VTPresPl	grow
+25	VTPresPl	carry
+1	VTPresPl	suggest
+1	VTPresPl	migrate
+25	VTPresPl	know
+
+20	VIPresPl	carry
+1	VIPresPl	have
+40	VIPresPl	speak
+1	VIPresPl	cover
+1	VIPresPl	ride
+1	VIPresPl	drink
+1	VIPresPl	grow
+40	VIPresPl	migrate
+1	VIPresPl	know
+1	VIPresPl	suggest
+
+# Wh-determiners.
+1	WhDet	that
+1	WhDet	what
+1	WhDet	which
+
+# Wh-pronouns.
+46	WhPronoun	what
+54	WhPronoun	who
+
+# Wh possessive pronoun.
+1	Misc	whose
+
+# Wh-adverbs
+57	WhAdverb	how
+14	WhAdverb	when
+14	WhAdverb	where
+14	WhAdverb	why
+
+# Relative Clause Pronouns
+78	RelClausePron	who
+22	RelClausePron	that
+1	RelClausePron	which
+
+# Possessive marker.
+1	Misc	's
